@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0AF875A61E5E7F94009F7E9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF875A51E5E7F94009F7E9B /* AppDelegate.swift */; };
-		0AF875A81E5E7F94009F7E9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF875A71E5E7F94009F7E9B /* ViewController.swift */; };
 		0AF875AB1E5E7F94009F7E9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875A91E5E7F94009F7E9B /* Main.storyboard */; };
 		0AF875AD1E5E7F94009F7E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875AC1E5E7F94009F7E9B /* Assets.xcassets */; };
 		0AF875B01E5E7F94009F7E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875AE1E5E7F94009F7E9B /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		0AF875A21E5E7F94009F7E9B /* DYTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF875A51E5E7F94009F7E9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AF875A71E5E7F94009F7E9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0AF875AA1E5E7F94009F7E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AF875AC1E5E7F94009F7E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AF875AF1E5E7F94009F7E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,69 @@
 		0AF875A41E5E7F94009F7E9B /* DYTV */ = {
 			isa = PBXGroup;
 			children = (
+				0AF875B71E5E85D4009F7E9B /* Classes */,
 				0AF875A51E5E7F94009F7E9B /* AppDelegate.swift */,
-				0AF875A71E5E7F94009F7E9B /* ViewController.swift */,
 				0AF875A91E5E7F94009F7E9B /* Main.storyboard */,
 				0AF875AC1E5E7F94009F7E9B /* Assets.xcassets */,
 				0AF875AE1E5E7F94009F7E9B /* LaunchScreen.storyboard */,
 				0AF875B11E5E7F94009F7E9B /* Info.plist */,
 			);
 			path = DYTV;
+			sourceTree = "<group>";
+		};
+		0AF875B71E5E85D4009F7E9B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0AF875B81E5E85D4009F7E9B /* Follow */,
+				0AF875B91E5E85D4009F7E9B /* Home */,
+				0AF875BA1E5E85D4009F7E9B /* Live */,
+				0AF875BB1E5E85D4009F7E9B /* Main */,
+				0AF875BC1E5E85D4009F7E9B /* Profile */,
+				0AF875BD1E5E85D4009F7E9B /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0AF875B81E5E85D4009F7E9B /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		0AF875B91E5E85D4009F7E9B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0AF875BA1E5E85D4009F7E9B /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		0AF875BB1E5E85D4009F7E9B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0AF875BC1E5E85D4009F7E9B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		0AF875BD1E5E85D4009F7E9B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +149,8 @@
 				TargetAttributes = {
 					0AF875A11E5E7F94009F7E9B = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 2RNYPV7B3E;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -136,7 +190,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AF875A81E5E7F94009F7E9B /* ViewController.swift in Sources */,
 				0AF875A61E5E7F94009F7E9B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,10 +311,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 2RNYPV7B3E;
 				INFOPLIST_FILE = DYTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dtb.DYTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6e96591d-ab48-4a27-8af5-6a11010143f3";
+				PROVISIONING_PROFILE_SPECIFIER = dtbCSProfile;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -270,10 +328,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 2RNYPV7B3E;
 				INFOPLIST_FILE = DYTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dtb.DYTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6e96591d-ab48-4a27-8af5-6a11010143f3";
+				PROVISIONING_PROFILE_SPECIFIER = dtbCSProfile;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
