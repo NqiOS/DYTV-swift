@@ -11,6 +11,10 @@
 		0AF875AB1E5E7F94009F7E9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875A91E5E7F94009F7E9B /* Main.storyboard */; };
 		0AF875AD1E5E7F94009F7E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875AC1E5E7F94009F7E9B /* Assets.xcassets */; };
 		0AF875B01E5E7F94009F7E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875AE1E5E7F94009F7E9B /* LaunchScreen.storyboard */; };
+		0AF875C01E5E8E86009F7E9B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875BE1E5E8E86009F7E9B /* Home.storyboard */; };
+		0AF875C21E5E8EAB009F7E9B /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875C11E5E8EAB009F7E9B /* Live.storyboard */; };
+		0AF875C51E5E8ECF009F7E9B /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875C31E5E8ECF009F7E9B /* Follow.storyboard */; };
+		0AF875C71E5E8EFB009F7E9B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875C61E5E8EFB009F7E9B /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		0AF875AC1E5E7F94009F7E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AF875AF1E5E7F94009F7E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AF875B11E5E7F94009F7E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF875BF1E5E8E86009F7E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYTV/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
+		0AF875C11E5E8EAB009F7E9B /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
+		0AF875C41E5E8ECF009F7E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYTV/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
+		0AF875C61E5E8EFB009F7E9B /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +62,6 @@
 			children = (
 				0AF875B71E5E85D4009F7E9B /* Classes */,
 				0AF875A51E5E7F94009F7E9B /* AppDelegate.swift */,
-				0AF875A91E5E7F94009F7E9B /* Main.storyboard */,
 				0AF875AC1E5E7F94009F7E9B /* Assets.xcassets */,
 				0AF875AE1E5E7F94009F7E9B /* LaunchScreen.storyboard */,
 				0AF875B11E5E7F94009F7E9B /* Info.plist */,
@@ -65,10 +72,10 @@
 		0AF875B71E5E85D4009F7E9B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0AF875B81E5E85D4009F7E9B /* Follow */,
+				0AF875BB1E5E85D4009F7E9B /* Main */,
 				0AF875B91E5E85D4009F7E9B /* Home */,
 				0AF875BA1E5E85D4009F7E9B /* Live */,
-				0AF875BB1E5E85D4009F7E9B /* Main */,
+				0AF875B81E5E85D4009F7E9B /* Follow */,
 				0AF875BC1E5E85D4009F7E9B /* Profile */,
 				0AF875BD1E5E85D4009F7E9B /* Tools */,
 			);
@@ -99,6 +106,11 @@
 		0AF875BB1E5E85D4009F7E9B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				0AF875A91E5E7F94009F7E9B /* Main.storyboard */,
+				0AF875BE1E5E8E86009F7E9B /* Home.storyboard */,
+				0AF875C11E5E8EAB009F7E9B /* Live.storyboard */,
+				0AF875C61E5E8EFB009F7E9B /* Profile.storyboard */,
+				0AF875C31E5E8ECF009F7E9B /* Follow.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -180,6 +192,10 @@
 				0AF875B01E5E7F94009F7E9B /* LaunchScreen.storyboard in Resources */,
 				0AF875AD1E5E7F94009F7E9B /* Assets.xcassets in Resources */,
 				0AF875AB1E5E7F94009F7E9B /* Main.storyboard in Resources */,
+				0AF875C21E5E8EAB009F7E9B /* Live.storyboard in Resources */,
+				0AF875C01E5E8E86009F7E9B /* Home.storyboard in Resources */,
+				0AF875C71E5E8EFB009F7E9B /* Profile.storyboard in Resources */,
+				0AF875C51E5E8ECF009F7E9B /* Follow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +219,7 @@
 				0AF875AA1E5E7F94009F7E9B /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		0AF875AE1E5E7F94009F7E9B /* LaunchScreen.storyboard */ = {
@@ -211,6 +228,22 @@
 				0AF875AF1E5E7F94009F7E9B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0AF875BE1E5E8E86009F7E9B /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AF875BF1E5E8E86009F7E9B /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		0AF875C31E5E8ECF009F7E9B /* Follow.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AF875C41E5E8ECF009F7E9B /* Base */,
+			);
+			name = Follow.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
