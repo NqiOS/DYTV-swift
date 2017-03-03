@@ -28,10 +28,9 @@
         <scene sceneID="HGd-nr-I5f">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UPu-FU-Nuv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" image="btn_home_normal_24x24_" selectedImage="btn_home_selected_24x24_" id="tLY-GX-EAU"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="btn_home_normal" selectedImage="btn_home_selected" id="tLY-GX-EAU"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LfM-M6-bcR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -47,7 +46,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="btn_home_normal_24x24_" width="24" height="24"/>
-        <image name="btn_home_selected_24x24_" width="24" height="24"/>
+        <image name="btn_home_normal" width="24" height="24"/>
+        <image name="btn_home_selected" width="24" height="24"/>
     </resources>
 </document>
