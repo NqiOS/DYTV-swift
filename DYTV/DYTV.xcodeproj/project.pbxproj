@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A5855461E7106E100E62E8E /* NQHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5855451E7106E100E62E8E /* NQHomeViewController.swift */; };
+		0A5855481E71088A00E62E8E /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5855471E71088A00E62E8E /* UIBarButtonItem+Extension.swift */; };
+		0A58554A1E712DA400E62E8E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5855491E712DA400E62E8E /* UIColor+Extension.swift */; };
+		0A58554C1E712F4100E62E8E /* NSNate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58554B1E712F4100E62E8E /* NSNate+Extension.swift */; };
+		0A58554E1E71308D00E62E8E /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58554D1E71308D00E62E8E /* Common.swift */; };
 		0AF875A61E5E7F94009F7E9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF875A51E5E7F94009F7E9B /* AppDelegate.swift */; };
 		0AF875AB1E5E7F94009F7E9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875A91E5E7F94009F7E9B /* Main.storyboard */; };
 		0AF875AD1E5E7F94009F7E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875AC1E5E7F94009F7E9B /* Assets.xcassets */; };
@@ -18,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A5855451E7106E100E62E8E /* NQHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQHomeViewController.swift; sourceTree = "<group>"; };
+		0A5855471E71088A00E62E8E /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		0A5855491E712DA400E62E8E /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		0A58554B1E712F4100E62E8E /* NSNate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNate+Extension.swift"; sourceTree = "<group>"; };
+		0A58554D1E71308D00E62E8E /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		0AF875A21E5E7F94009F7E9B /* DYTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF875A51E5E7F94009F7E9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AF875AA1E5E7F94009F7E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,6 +102,7 @@
 		0AF875B91E5E85D4009F7E9B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0A5855451E7106E100E62E8E /* NQHomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -125,6 +136,10 @@
 		0AF875BD1E5E85D4009F7E9B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				0A5855471E71088A00E62E8E /* UIBarButtonItem+Extension.swift */,
+				0A5855491E712DA400E62E8E /* UIColor+Extension.swift */,
+				0A58554B1E712F4100E62E8E /* NSNate+Extension.swift */,
+				0A58554D1E71308D00E62E8E /* Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -155,6 +170,7 @@
 		0AF8759A1E5E7F94009F7E9B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NQ;
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = NQ;
@@ -206,7 +222,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A58554C1E712F4100E62E8E /* NSNate+Extension.swift in Sources */,
+				0A5855461E7106E100E62E8E /* NQHomeViewController.swift in Sources */,
+				0A5855481E71088A00E62E8E /* UIBarButtonItem+Extension.swift in Sources */,
 				0AF875A61E5E7F94009F7E9B /* AppDelegate.swift in Sources */,
+				0A58554E1E71308D00E62E8E /* Common.swift in Sources */,
+				0A58554A1E712DA400E62E8E /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +414,7 @@
 				0AF875B61E5E7F94009F7E9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
