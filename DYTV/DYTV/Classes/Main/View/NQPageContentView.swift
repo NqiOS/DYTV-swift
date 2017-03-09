@@ -7,6 +7,12 @@
 //
 
 import UIKit
+
+// MARK:- 定义协议
+protocol  NQPageContentViewDelegate : class {
+    func pageContentView(_ contentView : NQPageContentView,progress : CGFloat,sourceIndex : Int,targetIndex : Int)
+}
+
 // MARK:- 定义常量
 private let ContentCellID = "ContentCellID"
 
@@ -97,6 +103,16 @@ extension NQPageContentView : UICollectionViewDataSource{
 extension NQPageContentView : UICollectionViewDelegate{
     
 }
+
+// MARK:- 对外暴露的方法
+extension NQPageContentView{
+    func setCurrentIndex(_ currentIndex : Int){
+        //1.滚动正确的位置
+        let offsetX = CGFloat(currentIndex) * collectionView.frame.width
+        collectionView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: false)
+    }
+}
+
 
 
 

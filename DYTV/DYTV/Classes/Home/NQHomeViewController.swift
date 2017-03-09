@@ -17,6 +17,7 @@ class NQHomeViewController: UIViewController {
         let titleFrame = CGRect(x: 0, y: kStatusBarH+kNavigationBarH, width: kScreenW, height: kTitleViewH)
         let titles = ["推荐","游戏","娱乐","趣玩"]
         let titleView = NQPageTitleView(frame: titleFrame, titles: titles)
+        titleView.delegate = self
         return titleView
     }()
     
@@ -73,5 +74,12 @@ extension NQHomeViewController{
         let searchItem =  UIBarButtonItem(imageName: "btn_search", highImageName: "btn_search_clicked", size: size)
         let qrcodeItem =  UIBarButtonItem(imageName: "Image_scan", highImageName: "Image_scan_click", size: size)
         navigationItem.rightBarButtonItems = [historyItem,searchItem,qrcodeItem]
+    }
+}
+
+// MARK:- 遵守PageTitleViewDelegate协议
+extension NQHomeViewController : NQPageTitleViewDelegate{
+    func pageTitleView(_ titleView: NQPageTitleView, selectedIndex index: Int) {
+        pageContentView.setCurrentIndex(index)
     }
 }
