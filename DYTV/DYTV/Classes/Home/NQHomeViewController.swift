@@ -8,8 +8,19 @@
 
 import UIKit
 
+private let kTitleViewH : CGFloat = 40
+
 class NQHomeViewController: UIViewController {
 
+    // MARK:- 懒加载属性
+    fileprivate lazy var pageTitleView : NQPageTitleView = {
+        let titleFrame = CGRect(x: 0, y: kStatusBarH+kNavigationBarH, width: kScreenW, height: kTitleViewH)
+        let titles = ["推荐","游戏","娱乐","趣玩"]
+        let titleView = NQPageTitleView(frame: titleFrame, titles: titles)
+        return titleView
+    }()
+    
+    // MARK:- View加载
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,6 +35,9 @@ extension NQHomeViewController{
         
         //0.设置导航栏
         setupNavigationBar()
+        
+        //1.设置TitleView
+        view.addSubview(pageTitleView)
     }
     
     func setupNavigationBar(){
