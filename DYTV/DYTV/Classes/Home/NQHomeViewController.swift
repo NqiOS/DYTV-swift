@@ -20,6 +20,23 @@ class NQHomeViewController: UIViewController {
         return titleView
     }()
     
+    fileprivate lazy var pageContentView : NQPageContentView = {
+        //0.确定内容的frame
+        let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTabbarH
+        let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH)
+        
+        //1.确定所有的子控制器
+        var childVcs = [UIViewController]()
+        childVcs.append(NQRecommendViewController())
+        childVcs.append(NQGameViewController())
+        childVcs.append(NQAmuseViewController())
+        childVcs.append(NQFunnyViewController())
+        
+        let contentView = NQPageContentView(frame: contentFrame, childVcs: childVcs, parentViewController: self)
+        
+        return contentView
+    }()
+    
     // MARK:- View加载
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +55,9 @@ extension NQHomeViewController{
         
         //1.设置TitleView
         view.addSubview(pageTitleView)
+        
+        //2.添加ContentView
+        view.addSubview(pageContentView)
     }
     
     func setupNavigationBar(){

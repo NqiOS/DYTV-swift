@@ -13,6 +13,11 @@
 		0A58554C1E712F4100E62E8E /* NSNate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58554B1E712F4100E62E8E /* NSNate+Extension.swift */; };
 		0A58554E1E71308D00E62E8E /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58554D1E71308D00E62E8E /* Common.swift */; };
 		0A5855641E71385700E62E8E /* NQPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5855631E71385700E62E8E /* NQPageTitleView.swift */; };
+		0A5855661E714A6100E62E8E /* NQPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5855651E714A6100E62E8E /* NQPageContentView.swift */; };
+		0A5855681E7152C000E62E8E /* NQRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5855671E7152C000E62E8E /* NQRecommendViewController.swift */; };
+		0A58556A1E7152D300E62E8E /* NQGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5855691E7152D300E62E8E /* NQGameViewController.swift */; };
+		0A58556C1E7152E000E62E8E /* NQAmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58556B1E7152E000E62E8E /* NQAmuseViewController.swift */; };
+		0A58556E1E7152EC00E62E8E /* NQFunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58556D1E7152EC00E62E8E /* NQFunnyViewController.swift */; };
 		0AF875A61E5E7F94009F7E9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF875A51E5E7F94009F7E9B /* AppDelegate.swift */; };
 		0AF875AB1E5E7F94009F7E9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875A91E5E7F94009F7E9B /* Main.storyboard */; };
 		0AF875AD1E5E7F94009F7E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875AC1E5E7F94009F7E9B /* Assets.xcassets */; };
@@ -30,6 +35,11 @@
 		0A58554B1E712F4100E62E8E /* NSNate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNate+Extension.swift"; sourceTree = "<group>"; };
 		0A58554D1E71308D00E62E8E /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		0A5855631E71385700E62E8E /* NQPageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQPageTitleView.swift; sourceTree = "<group>"; };
+		0A5855651E714A6100E62E8E /* NQPageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQPageContentView.swift; sourceTree = "<group>"; };
+		0A5855671E7152C000E62E8E /* NQRecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQRecommendViewController.swift; sourceTree = "<group>"; };
+		0A5855691E7152D300E62E8E /* NQGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQGameViewController.swift; sourceTree = "<group>"; };
+		0A58556B1E7152E000E62E8E /* NQAmuseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQAmuseViewController.swift; sourceTree = "<group>"; };
+		0A58556D1E7152EC00E62E8E /* NQFunnyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQFunnyViewController.swift; sourceTree = "<group>"; };
 		0AF875A21E5E7F94009F7E9B /* DYTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF875A51E5E7F94009F7E9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AF875AA1E5E7F94009F7E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				0A5855631E71385700E62E8E /* NQPageTitleView.swift */,
+				0A5855651E714A6100E62E8E /* NQPageContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -86,6 +97,10 @@
 			isa = PBXGroup;
 			children = (
 				0A5855451E7106E100E62E8E /* NQHomeViewController.swift */,
+				0A5855671E7152C000E62E8E /* NQRecommendViewController.swift */,
+				0A5855691E7152D300E62E8E /* NQGameViewController.swift */,
+				0A58556B1E7152E000E62E8E /* NQAmuseViewController.swift */,
+				0A58556D1E7152EC00E62E8E /* NQFunnyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -385,11 +400,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A58556E1E7152EC00E62E8E /* NQFunnyViewController.swift in Sources */,
+				0A58556C1E7152E000E62E8E /* NQAmuseViewController.swift in Sources */,
 				0A5855641E71385700E62E8E /* NQPageTitleView.swift in Sources */,
 				0A58554C1E712F4100E62E8E /* NSNate+Extension.swift in Sources */,
 				0A5855461E7106E100E62E8E /* NQHomeViewController.swift in Sources */,
 				0A5855481E71088A00E62E8E /* UIBarButtonItem+Extension.swift in Sources */,
+				0A5855661E714A6100E62E8E /* NQPageContentView.swift in Sources */,
+				0A58556A1E7152D300E62E8E /* NQGameViewController.swift in Sources */,
 				0AF875A61E5E7F94009F7E9B /* AppDelegate.swift in Sources */,
+				0A5855681E7152C000E62E8E /* NQRecommendViewController.swift in Sources */,
 				0A58554E1E71308D00E62E8E /* Common.swift in Sources */,
 				0A58554A1E712DA400E62E8E /* UIColor+Extension.swift in Sources */,
 			);
