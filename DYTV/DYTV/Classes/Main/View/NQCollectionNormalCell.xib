@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NQCollectionNormalCell" customModule="DYTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="268" height="168"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="268" height="168"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_cate_normal" translatesAutoresizingMaskIntoConstraints="NO" id="GCT-9F-AJe">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="6jX-9D-epf"/>
+                            <constraint firstAttribute="height" constant="14" id="feL-wz-PUv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="胖哥斗鱼" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9w-dE-1b7">
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="PLH-Lj-0vA"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="胖哥斗鱼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzK-pA-AnM">
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WR7-b4-FW5">
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="6666在线" image="Image_online"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="PLH-Lj-0vA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0NK-dM-ELV"/>
+                <constraint firstItem="GCT-9F-AJe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="11U-UT-lx8"/>
+                <constraint firstItem="R9w-dE-1b7" firstAttribute="leading" secondItem="GCT-9F-AJe" secondAttribute="trailing" constant="10" id="8gZ-Ot-ZpU"/>
+                <constraint firstAttribute="bottom" secondItem="GCT-9F-AJe" secondAttribute="bottom" constant="10" id="Byq-yF-n8s"/>
+                <constraint firstItem="JzK-pA-AnM" firstAttribute="bottom" secondItem="PLH-Lj-0vA" secondAttribute="bottom" constant="-5" id="HhY-R2-O6c"/>
+                <constraint firstItem="PLH-Lj-0vA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NZE-pR-sUw"/>
+                <constraint firstAttribute="trailing" secondItem="PLH-Lj-0vA" secondAttribute="trailing" id="Txz-KV-Ggy"/>
+                <constraint firstItem="R9w-dE-1b7" firstAttribute="centerY" secondItem="GCT-9F-AJe" secondAttribute="centerY" id="VRg-db-7wC"/>
+                <constraint firstItem="JzK-pA-AnM" firstAttribute="leading" secondItem="PLH-Lj-0vA" secondAttribute="leading" constant="5" id="dLc-LO-qoR"/>
+                <constraint firstAttribute="trailing" secondItem="R9w-dE-1b7" secondAttribute="trailing" constant="5" id="fYF-N2-ydB"/>
+                <constraint firstItem="GCT-9F-AJe" firstAttribute="top" secondItem="PLH-Lj-0vA" secondAttribute="bottom" constant="5" id="iOV-qr-iSk"/>
+                <constraint firstItem="WR7-b4-FW5" firstAttribute="trailing" secondItem="PLH-Lj-0vA" secondAttribute="trailing" constant="-5" id="mL1-iM-oag"/>
+                <constraint firstItem="WR7-b4-FW5" firstAttribute="bottom" secondItem="PLH-Lj-0vA" secondAttribute="bottom" constant="-5" id="uqQ-2B-D9g"/>
+            </constraints>
+            <size key="customSize" width="268" height="168"/>
+            <point key="canvasLocation" x="-68" y="18"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Image_online" width="16" height="16"/>
+        <image name="Img_default" width="172" height="103"/>
+        <image name="home_live_cate_normal" width="14" height="14"/>
+    </resources>
+</document>

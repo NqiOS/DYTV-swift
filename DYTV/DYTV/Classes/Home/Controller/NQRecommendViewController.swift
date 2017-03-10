@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NQRecommendViewController: UIViewController {
+class NQRecommendViewController: NQAnchorViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

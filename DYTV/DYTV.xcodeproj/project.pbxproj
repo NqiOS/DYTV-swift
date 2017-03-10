@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1E49581E729F6600517C30 /* NQAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E49571E729F6600517C30 /* NQAnchorViewController.swift */; };
+		0A1E495D1E72A65A00517C30 /* NQCollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E495B1E72A65A00517C30 /* NQCollectionNormalCell.swift */; };
+		0A1E495E1E72A65A00517C30 /* NQCollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1E495C1E72A65A00517C30 /* NQCollectionNormalCell.xib */; };
+		0A1E49611E72A97600517C30 /* NQCollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E495F1E72A97600517C30 /* NQCollectionPrettyCell.swift */; };
+		0A1E49621E72A97600517C30 /* NQCollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1E49601E72A97600517C30 /* NQCollectionPrettyCell.xib */; };
+		0A1E49651E72AB4800517C30 /* NQCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E49631E72AB4800517C30 /* NQCollectionHeaderView.swift */; };
+		0A1E49661E72AB4800517C30 /* NQCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1E49641E72AB4800517C30 /* NQCollectionHeaderView.xib */; };
 		0A5855461E7106E100E62E8E /* NQHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5855451E7106E100E62E8E /* NQHomeViewController.swift */; };
 		0A5855481E71088A00E62E8E /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5855471E71088A00E62E8E /* UIBarButtonItem+Extension.swift */; };
 		0A58554A1E712DA400E62E8E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5855491E712DA400E62E8E /* UIColor+Extension.swift */; };
@@ -29,6 +36,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A1E49571E729F6600517C30 /* NQAnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQAnchorViewController.swift; sourceTree = "<group>"; };
+		0A1E495B1E72A65A00517C30 /* NQCollectionNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQCollectionNormalCell.swift; sourceTree = "<group>"; };
+		0A1E495C1E72A65A00517C30 /* NQCollectionNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NQCollectionNormalCell.xib; sourceTree = "<group>"; };
+		0A1E495F1E72A97600517C30 /* NQCollectionPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQCollectionPrettyCell.swift; sourceTree = "<group>"; };
+		0A1E49601E72A97600517C30 /* NQCollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NQCollectionPrettyCell.xib; sourceTree = "<group>"; };
+		0A1E49631E72AB4800517C30 /* NQCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQCollectionHeaderView.swift; sourceTree = "<group>"; };
+		0A1E49641E72AB4800517C30 /* NQCollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NQCollectionHeaderView.xib; sourceTree = "<group>"; };
 		0A5855451E7106E100E62E8E /* NQHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NQHomeViewController.swift; path = ../NQHomeViewController.swift; sourceTree = "<group>"; };
 		0A5855471E71088A00E62E8E /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		0A5855491E712DA400E62E8E /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -66,6 +80,7 @@
 		0A58554F1E71379000E62E8E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0A1E49571E729F6600517C30 /* NQAnchorViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -82,6 +97,12 @@
 			children = (
 				0A5855631E71385700E62E8E /* NQPageTitleView.swift */,
 				0A5855651E714A6100E62E8E /* NQPageContentView.swift */,
+				0A1E495B1E72A65A00517C30 /* NQCollectionNormalCell.swift */,
+				0A1E495C1E72A65A00517C30 /* NQCollectionNormalCell.xib */,
+				0A1E495F1E72A97600517C30 /* NQCollectionPrettyCell.swift */,
+				0A1E49601E72A97600517C30 /* NQCollectionPrettyCell.xib */,
+				0A1E49631E72AB4800517C30 /* NQCollectionHeaderView.swift */,
+				0A1E49641E72AB4800517C30 /* NQCollectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -383,13 +404,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1E49661E72AB4800517C30 /* NQCollectionHeaderView.xib in Resources */,
 				0AF875B01E5E7F94009F7E9B /* LaunchScreen.storyboard in Resources */,
 				0AF875AD1E5E7F94009F7E9B /* Assets.xcassets in Resources */,
 				0AF875AB1E5E7F94009F7E9B /* Main.storyboard in Resources */,
 				0AF875C21E5E8EAB009F7E9B /* Live.storyboard in Resources */,
 				0AF875C01E5E8E86009F7E9B /* Home.storyboard in Resources */,
 				0AF875C71E5E8EFB009F7E9B /* Profile.storyboard in Resources */,
+				0A1E49621E72A97600517C30 /* NQCollectionPrettyCell.xib in Resources */,
 				0AF875C51E5E8ECF009F7E9B /* Follow.storyboard in Resources */,
+				0A1E495E1E72A65A00517C30 /* NQCollectionNormalCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,8 +428,12 @@
 				0A58556C1E7152E000E62E8E /* NQAmuseViewController.swift in Sources */,
 				0A5855641E71385700E62E8E /* NQPageTitleView.swift in Sources */,
 				0A58554C1E712F4100E62E8E /* NSNate+Extension.swift in Sources */,
+				0A1E49581E729F6600517C30 /* NQAnchorViewController.swift in Sources */,
 				0A5855461E7106E100E62E8E /* NQHomeViewController.swift in Sources */,
+				0A1E49651E72AB4800517C30 /* NQCollectionHeaderView.swift in Sources */,
 				0A5855481E71088A00E62E8E /* UIBarButtonItem+Extension.swift in Sources */,
+				0A1E49611E72A97600517C30 /* NQCollectionPrettyCell.swift in Sources */,
+				0A1E495D1E72A65A00517C30 /* NQCollectionNormalCell.swift in Sources */,
 				0A5855661E714A6100E62E8E /* NQPageContentView.swift in Sources */,
 				0A58556A1E7152D300E62E8E /* NQGameViewController.swift in Sources */,
 				0AF875A61E5E7F94009F7E9B /* AppDelegate.swift in Sources */,

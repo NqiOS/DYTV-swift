@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NQCollectionPrettyCell" customModule="DYTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="169" height="216"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="169" height="216"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFt-fM-Loj">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="rAd-pv-4os"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="深圳市" image="ico_location">
+                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="胖哥TV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6BU-Tm-Jx9">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="J18-JM-X0b"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="CsQ-g7-6RK"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7B2-HP-czT">
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="0.6420258620689655" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="cfw-Ob-dP9"/>
+                            <constraint firstAttribute="height" constant="20" id="gFS-9H-rep"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="6666在线">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="6BU-Tm-Jx9" firstAttribute="top" secondItem="CsQ-g7-6RK" secondAttribute="bottom" constant="5" id="4RK-9u-w16"/>
+                <constraint firstItem="VFt-fM-Loj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="FwN-8Q-6hj"/>
+                <constraint firstAttribute="bottom" secondItem="VFt-fM-Loj" secondAttribute="bottom" constant="10" id="JHa-9C-FuX"/>
+                <constraint firstItem="VFt-fM-Loj" firstAttribute="top" secondItem="6BU-Tm-Jx9" secondAttribute="bottom" constant="5" id="MFU-Jp-Dd0"/>
+                <constraint firstAttribute="trailing" secondItem="6BU-Tm-Jx9" secondAttribute="trailing" constant="5" id="MvX-R4-TaX"/>
+                <constraint firstAttribute="trailing" secondItem="CsQ-g7-6RK" secondAttribute="trailing" id="PaQ-if-9k0"/>
+                <constraint firstItem="6BU-Tm-Jx9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Xz5-0n-VLe"/>
+                <constraint firstItem="7B2-HP-czT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Y1a-9o-hLt"/>
+                <constraint firstItem="CsQ-g7-6RK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bHY-yC-7Jp"/>
+                <constraint firstAttribute="trailing" secondItem="7B2-HP-czT" secondAttribute="trailing" constant="8" id="h0c-ml-cwv"/>
+                <constraint firstItem="CsQ-g7-6RK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vhG-4y-D8S"/>
+            </constraints>
+            <size key="customSize" width="169" height="216"/>
+            <point key="canvasLocation" x="54.5" y="-31"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ico_location" width="12" height="12"/>
+        <image name="live_cell_default_phone" width="103" height="103"/>
+    </resources>
+</document>
