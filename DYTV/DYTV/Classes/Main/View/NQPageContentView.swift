@@ -20,7 +20,10 @@ private let ContentCellID = "ContentCellID"
 class NQPageContentView: UIView {
     // MARK:- 定义属性
     fileprivate var childVcs : [UIViewController]
-    fileprivate var parentViewController : UIViewController?
+    fileprivate weak var parentViewController : UIViewController?
+    fileprivate var startOffsetX : CGFloat = 0
+    fileprivate var isForbidScrollDelegate : Bool = false
+    weak var delegate : NQPageContentViewDelegate?
     
     // MARK:- 懒加载属性
     fileprivate lazy var collectionView : UICollectionView = {
@@ -101,12 +104,68 @@ extension NQPageContentView : UICollectionViewDataSource{
 
 // MARK:- 遵守UICollectionViewDelegate
 extension NQPageContentView : UICollectionViewDelegate{
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        //0.记录执行代理方法
+        isForbidScrollDelegate = false
+        startOffsetX = scrollView.contentOffset.x
+    }
     
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        //0.判断是否需要执行代理方法
+        if isForbidScrollDelegate{return}
+        
+        //1.定义需要的数据
+        var progress : CGFloat = 0
+        var soureIndex : Int = 0
+        var targetIndex : Int = 0
+        
+        //2.判断是左滑还是右滑
+        let currentOffsetX = scrollView.contentOffset.x
+        let scrollViewW = scrollView.bounds.width
+        
+        if  currentOffsetX > startOffsetX{//左滑
+            //1.计算progress
+            progress = currentOffsetX/scrollViewW - floor(currentOffsetX/scrollViewW)
+            //2.计算sourceIndex
+            soureIndex = Int(currentOffsetX/scrollViewW)
+            //3.计算targetIndex
+            targetIndex = soureIndex + 1
+            if targetIndex >= childVcs.count{
+                targetIndex = childVcs.count - 1
+            }
+            //4.如果完全划过去
+            if currentOffsetX - startOffsetX == scrollViewW{
+                progress = 1
+                targetIndex = soureIndex
+            }
+        }else{
+            //1.计算progress
+            progress = 1 - (currentOffsetX/scrollViewW - floor(currentOffsetX/scrollViewW))
+            //2.计算sourceIndex
+            targetIndex = Int(currentOffsetX/scrollViewW)
+            //3.计算targetIndex
+            soureIndex = targetIndex + 1
+            if soureIndex >= childVcs.count{
+                soureIndex = childVcs.count - 1
+            }
+            //4.如果完全划过去
+            if startOffsetX - currentOffsetX == scrollViewW{
+                progress = 1
+                soureIndex = targetIndex
+            }
+        }
+        
+//        print("currentOffsetX\(currentOffsetX)---startOffsetX\(startOffsetX)---soureIndex\(soureIndex)---targetIndex\(targetIndex)")
+        // 3.将progress/sourceIndex/targetIndex传递给titleView
+        delegate?.pageContentView(self, progress: progress, sourceIndex: soureIndex, targetIndex: targetIndex)
+    }
 }
 
 // MARK:- 对外暴露的方法
 extension NQPageContentView{
     func setCurrentIndex(_ currentIndex : Int){
+        //0.记录不执行代理方法
+        isForbidScrollDelegate = true
         //1.滚动正确的位置
         let offsetX = CGFloat(currentIndex) * collectionView.frame.width
         collectionView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: false)

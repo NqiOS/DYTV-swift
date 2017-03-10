@@ -13,7 +13,7 @@ private let kTitleViewH : CGFloat = 40
 class NQHomeViewController: UIViewController {
 
     // MARK:- 懒加载属性
-    fileprivate lazy var pageTitleView : NQPageTitleView = {
+    fileprivate lazy var pageTitleView : NQPageTitleView = {[weak self] in
         let titleFrame = CGRect(x: 0, y: kStatusBarH+kNavigationBarH, width: kScreenW, height: kTitleViewH)
         let titles = ["推荐","游戏","娱乐","趣玩"]
         let titleView = NQPageTitleView(frame: titleFrame, titles: titles)
@@ -21,7 +21,7 @@ class NQHomeViewController: UIViewController {
         return titleView
     }()
     
-    fileprivate lazy var pageContentView : NQPageContentView = {
+    fileprivate lazy var pageContentView : NQPageContentView = {[weak self] in
         //0.确定内容的frame
         let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTabbarH
         let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH)
@@ -34,7 +34,7 @@ class NQHomeViewController: UIViewController {
         childVcs.append(NQFunnyViewController())
         
         let contentView = NQPageContentView(frame: contentFrame, childVcs: childVcs, parentViewController: self)
-        
+        contentView.delegate = self
         return contentView
     }()
     
@@ -78,8 +78,18 @@ extension NQHomeViewController{
 }
 
 // MARK:- 遵守PageTitleViewDelegate协议
+//点击pageTitleView里的label
 extension NQHomeViewController : NQPageTitleViewDelegate{
     func pageTitleView(_ titleView: NQPageTitleView, selectedIndex index: Int) {
         pageContentView.setCurrentIndex(index)
     }
 }
+
+// MARK:- 遵守PageContentViewDelegate协议
+//滑动pageContentView
+extension NQHomeViewController : NQPageContentViewDelegate{
+    func pageContentView(_ contentView: NQPageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        pageTitleView.setTitleWithProgress(progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+    }
+}
+
