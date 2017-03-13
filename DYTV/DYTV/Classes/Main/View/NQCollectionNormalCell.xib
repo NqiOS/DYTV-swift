@@ -53,6 +53,12 @@
                 <constraint firstItem="WR7-b4-FW5" firstAttribute="bottom" secondItem="PLH-Lj-0vA" secondAttribute="bottom" constant="-5" id="uqQ-2B-D9g"/>
             </constraints>
             <size key="customSize" width="268" height="168"/>
+            <connections>
+                <outlet property="iconImageView" destination="PLH-Lj-0vA" id="pJE-m3-kqJ"/>
+                <outlet property="nickNameLabel" destination="JzK-pA-AnM" id="QdO-Jx-Oli"/>
+                <outlet property="onlineBtn" destination="WR7-b4-FW5" id="ALq-wG-wj9"/>
+                <outlet property="roomNameLabel" destination="R9w-dE-1b7" id="mEz-bn-aCm"/>
+            </connections>
             <point key="canvasLocation" x="-68" y="18"/>
         </collectionViewCell>
     </objects>

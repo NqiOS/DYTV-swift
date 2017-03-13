@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="NQCollectionHeaderView" customModule="DYTV" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
@@ -44,6 +44,11 @@
                 <constraint firstAttribute="trailing" secondItem="Rcv-xg-Plv" secondAttribute="trailing" constant="5" id="Vso-BK-HRi"/>
                 <constraint firstItem="LSw-cG-Nlz" firstAttribute="top" secondItem="tkv-rI-jIm" secondAttribute="bottom" constant="11" id="f9Y-Qu-7gl"/>
             </constraints>
+            <connections>
+                <outlet property="iconImageView" destination="LSw-cG-Nlz" id="ebY-Pa-1zK"/>
+                <outlet property="moreBtn" destination="Rcv-xg-Plv" id="Kj8-QW-oGt"/>
+                <outlet property="titleLabel" destination="whI-La-OJz" id="qh2-SU-N3c"/>
+            </connections>
         </collectionReusableView>
     </objects>
     <resources>

@@ -23,9 +23,10 @@ let kPrettyItemH = kNormalItemW * 4 / 3
 // MARK:- 定义NQAnchorViewController类
 class NQAnchorViewController: UIViewController {
     // MARK:- 定义属性
+    var baseVM : NQBaseViewModel!
     
     // MARK:- 懒加载属性
-     fileprivate lazy var collectionView : UICollectionView = {
+    lazy var collectionView : UICollectionView = {[unowned self] in
         //1.创建布局
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: kNormalItemW, height: kNormalItemH)
@@ -50,40 +51,51 @@ class NQAnchorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //设置UI
         setupUI()
+        //请求数据
+        loadData()
     }
 }
 
 // MARK:- 设置UI界面
 extension NQAnchorViewController{
-    fileprivate func setupUI(){
-        //2.添加collectionView
+     func setupUI(){
+        //添加collectionView
         view.addSubview(collectionView)
+    }
+}
+
+// MARK:- 请求数据
+extension NQAnchorViewController{
+    func loadData(){
+        
     }
 }
 
 // MARK:- 遵守UICollectionView的数据源
 extension  NQAnchorViewController : UICollectionViewDataSource{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 4
+        return baseVM.anchorGroups.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0{
-            return 6
-        }else{
-            return 3
-        }
+        return baseVM.anchorGroups[section].anchors.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! NQCollectionNormalCell
+        
+        cell.anchor = baseVM.anchorGroups[indexPath.section].anchors[indexPath.item]
+        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)as! NQCollectionHeaderView
+        
+        headerView.group = baseVM.anchorGroups[indexPath.section]
+        
         return headerView
     }
 }

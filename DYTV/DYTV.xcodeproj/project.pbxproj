@@ -25,6 +25,18 @@
 		0A58556A1E7152D300E62E8E /* NQGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5855691E7152D300E62E8E /* NQGameViewController.swift */; };
 		0A58556C1E7152E000E62E8E /* NQAmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58556B1E7152E000E62E8E /* NQAmuseViewController.swift */; };
 		0A58556E1E7152EC00E62E8E /* NQFunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58556D1E7152EC00E62E8E /* NQFunnyViewController.swift */; };
+		0A73EFA21E76418D009CEF59 /* NQRecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73EFA11E76418D009CEF59 /* NQRecommendViewModel.swift */; };
+		0A73EFA61E7642B3009CEF59 /* NQAnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73EFA31E7642B3009CEF59 /* NQAnchorGroup.swift */; };
+		0A73EFA71E7642B3009CEF59 /* NQAnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73EFA41E7642B3009CEF59 /* NQAnchorModel.swift */; };
+		0A73EFA81E7642B3009CEF59 /* NQBaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73EFA51E7642B3009CEF59 /* NQBaseGameModel.swift */; };
+		0A73EFAA1E76444F009CEF59 /* NQBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73EFA91E76444F009CEF59 /* NQBaseViewModel.swift */; };
+		0A73EFAC1E7647FB009CEF59 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73EFAB1E7647FB009CEF59 /* NetworkTools.swift */; };
+		0A73EFAE1E7687F0009CEF59 /* NQCollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73EFAD1E7687F0009CEF59 /* NQCollectionBaseCell.swift */; };
+		0A73EFB01E7695EC009CEF59 /* NQRecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73EFAF1E7695EC009CEF59 /* NQRecommendCycleView.swift */; };
+		0A73EFB21E769610009CEF59 /* NQRecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A73EFB11E769610009CEF59 /* NQRecommendCycleView.xib */; };
+		0A73EFB51E769A7B009CEF59 /* NQCollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73EFB31E769A7B009CEF59 /* NQCollectionCycleCell.swift */; };
+		0A73EFB61E769A7B009CEF59 /* NQCollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A73EFB41E769A7B009CEF59 /* NQCollectionCycleCell.xib */; };
+		0A73EFB81E769BB3009CEF59 /* NQCycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73EFB71E769BB3009CEF59 /* NQCycleModel.swift */; };
 		0AF875A61E5E7F94009F7E9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF875A51E5E7F94009F7E9B /* AppDelegate.swift */; };
 		0AF875AB1E5E7F94009F7E9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875A91E5E7F94009F7E9B /* Main.storyboard */; };
 		0AF875AD1E5E7F94009F7E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875AC1E5E7F94009F7E9B /* Assets.xcassets */; };
@@ -33,6 +45,7 @@
 		0AF875C21E5E8EAB009F7E9B /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875C11E5E8EAB009F7E9B /* Live.storyboard */; };
 		0AF875C51E5E8ECF009F7E9B /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875C31E5E8ECF009F7E9B /* Follow.storyboard */; };
 		0AF875C71E5E8EFB009F7E9B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875C61E5E8EFB009F7E9B /* Profile.storyboard */; };
+		CD203774DF95E873C68F2A0A /* Pods_DYTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E381BD9F0A97C7B4C7EDA2 /* Pods_DYTV.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +67,18 @@
 		0A5855691E7152D300E62E8E /* NQGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQGameViewController.swift; sourceTree = "<group>"; };
 		0A58556B1E7152E000E62E8E /* NQAmuseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQAmuseViewController.swift; sourceTree = "<group>"; };
 		0A58556D1E7152EC00E62E8E /* NQFunnyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQFunnyViewController.swift; sourceTree = "<group>"; };
+		0A73EFA11E76418D009CEF59 /* NQRecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQRecommendViewModel.swift; sourceTree = "<group>"; };
+		0A73EFA31E7642B3009CEF59 /* NQAnchorGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQAnchorGroup.swift; sourceTree = "<group>"; };
+		0A73EFA41E7642B3009CEF59 /* NQAnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQAnchorModel.swift; sourceTree = "<group>"; };
+		0A73EFA51E7642B3009CEF59 /* NQBaseGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQBaseGameModel.swift; sourceTree = "<group>"; };
+		0A73EFA91E76444F009CEF59 /* NQBaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQBaseViewModel.swift; sourceTree = "<group>"; };
+		0A73EFAB1E7647FB009CEF59 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		0A73EFAD1E7687F0009CEF59 /* NQCollectionBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQCollectionBaseCell.swift; sourceTree = "<group>"; };
+		0A73EFAF1E7695EC009CEF59 /* NQRecommendCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQRecommendCycleView.swift; sourceTree = "<group>"; };
+		0A73EFB11E769610009CEF59 /* NQRecommendCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NQRecommendCycleView.xib; sourceTree = "<group>"; };
+		0A73EFB31E769A7B009CEF59 /* NQCollectionCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQCollectionCycleCell.swift; sourceTree = "<group>"; };
+		0A73EFB41E769A7B009CEF59 /* NQCollectionCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NQCollectionCycleCell.xib; sourceTree = "<group>"; };
+		0A73EFB71E769BB3009CEF59 /* NQCycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQCycleModel.swift; sourceTree = "<group>"; };
 		0AF875A21E5E7F94009F7E9B /* DYTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF875A51E5E7F94009F7E9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AF875AA1E5E7F94009F7E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +89,9 @@
 		0AF875C11E5E8EAB009F7E9B /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Live.storyboard; path = ../Main/Live.storyboard; sourceTree = "<group>"; };
 		0AF875C41E5E8ECF009F7E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYTV/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
 		0AF875C61E5E8EFB009F7E9B /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = ../Main/Profile.storyboard; sourceTree = "<group>"; };
+		382E72E3A17AF4B0CEE2874E /* Pods-DYTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYTV/Pods-DYTV.debug.xcconfig"; sourceTree = "<group>"; };
+		8A75C3B4A5203E01F64B8BEA /* Pods-DYTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYTV/Pods-DYTV.release.xcconfig"; sourceTree = "<group>"; };
+		F4E381BD9F0A97C7B4C7EDA2 /* Pods_DYTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +99,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD203774DF95E873C68F2A0A /* Pods_DYTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06C868CE13B750CB49C35855 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				382E72E3A17AF4B0CEE2874E /* Pods-DYTV.debug.xcconfig */,
+				8A75C3B4A5203E01F64B8BEA /* Pods-DYTV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		0A58554F1E71379000E62E8E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +126,9 @@
 		0A5855501E71379600E62E8E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0A73EFA51E7642B3009CEF59 /* NQBaseGameModel.swift */,
+				0A73EFA31E7642B3009CEF59 /* NQAnchorGroup.swift */,
+				0A73EFA41E7642B3009CEF59 /* NQAnchorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -97,6 +138,7 @@
 			children = (
 				0A5855631E71385700E62E8E /* NQPageTitleView.swift */,
 				0A5855651E714A6100E62E8E /* NQPageContentView.swift */,
+				0A73EFAD1E7687F0009CEF59 /* NQCollectionBaseCell.swift */,
 				0A1E495B1E72A65A00517C30 /* NQCollectionNormalCell.swift */,
 				0A1E495C1E72A65A00517C30 /* NQCollectionNormalCell.xib */,
 				0A1E495F1E72A97600517C30 /* NQCollectionPrettyCell.swift */,
@@ -110,6 +152,7 @@
 		0A5855521E71379E00E62E8E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0A73EFA91E76444F009CEF59 /* NQBaseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -129,6 +172,7 @@
 		0A5855541E7137BA00E62E8E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0A73EFB71E769BB3009CEF59 /* NQCycleModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -136,6 +180,10 @@
 		0A5855551E7137BE00E62E8E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0A73EFAF1E7695EC009CEF59 /* NQRecommendCycleView.swift */,
+				0A73EFB11E769610009CEF59 /* NQRecommendCycleView.xib */,
+				0A73EFB31E769A7B009CEF59 /* NQCollectionCycleCell.swift */,
+				0A73EFB41E769A7B009CEF59 /* NQCollectionCycleCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -143,6 +191,7 @@
 		0A5855561E7137C400E62E8E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0A73EFA11E76418D009CEF59 /* NQRecommendViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -236,6 +285,8 @@
 			children = (
 				0AF875A41E5E7F94009F7E9B /* DYTV */,
 				0AF875A31E5E7F94009F7E9B /* Products */,
+				06C868CE13B750CB49C35855 /* Pods */,
+				8BFBC6C1E0728FFF6EDDED76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -339,8 +390,17 @@
 				0A5855491E712DA400E62E8E /* UIColor+Extension.swift */,
 				0A58554B1E712F4100E62E8E /* NSNate+Extension.swift */,
 				0A58554D1E71308D00E62E8E /* Common.swift */,
+				0A73EFAB1E7647FB009CEF59 /* NetworkTools.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		8BFBC6C1E0728FFF6EDDED76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4E381BD9F0A97C7B4C7EDA2 /* Pods_DYTV.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,9 +410,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AF875B41E5E7F94009F7E9B /* Build configuration list for PBXNativeTarget "DYTV" */;
 			buildPhases = (
+				A6BBEE7C48DBF9ECA8E74828 /* [CP] Check Pods Manifest.lock */,
 				0AF8759E1E5E7F94009F7E9B /* Sources */,
 				0AF8759F1E5E7F94009F7E9B /* Frameworks */,
 				0AF875A01E5E7F94009F7E9B /* Resources */,
+				B887CFA713107600507F6B6D /* [CP] Embed Pods Frameworks */,
+				B07563722A9884B20EF0388F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -377,6 +440,7 @@
 					0AF875A11E5E7F94009F7E9B = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2RNYPV7B3E;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -405,6 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A1E49661E72AB4800517C30 /* NQCollectionHeaderView.xib in Resources */,
+				0A73EFB61E769A7B009CEF59 /* NQCollectionCycleCell.xib in Resources */,
 				0AF875B01E5E7F94009F7E9B /* LaunchScreen.storyboard in Resources */,
 				0AF875AD1E5E7F94009F7E9B /* Assets.xcassets in Resources */,
 				0AF875AB1E5E7F94009F7E9B /* Main.storyboard in Resources */,
@@ -413,11 +478,60 @@
 				0AF875C71E5E8EFB009F7E9B /* Profile.storyboard in Resources */,
 				0A1E49621E72A97600517C30 /* NQCollectionPrettyCell.xib in Resources */,
 				0AF875C51E5E8ECF009F7E9B /* Follow.storyboard in Resources */,
+				0A73EFB21E769610009CEF59 /* NQRecommendCycleView.xib in Resources */,
 				0A1E495E1E72A65A00517C30 /* NQCollectionNormalCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6BBEE7C48DBF9ECA8E74828 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B07563722A9884B20EF0388F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYTV/Pods-DYTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B887CFA713107600507F6B6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYTV/Pods-DYTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0AF8759E1E5E7F94009F7E9B /* Sources */ = {
@@ -426,14 +540,24 @@
 			files = (
 				0A58556E1E7152EC00E62E8E /* NQFunnyViewController.swift in Sources */,
 				0A58556C1E7152E000E62E8E /* NQAmuseViewController.swift in Sources */,
+				0A73EFA71E7642B3009CEF59 /* NQAnchorModel.swift in Sources */,
 				0A5855641E71385700E62E8E /* NQPageTitleView.swift in Sources */,
+				0A73EFB51E769A7B009CEF59 /* NQCollectionCycleCell.swift in Sources */,
+				0A73EFA81E7642B3009CEF59 /* NQBaseGameModel.swift in Sources */,
+				0A73EFAA1E76444F009CEF59 /* NQBaseViewModel.swift in Sources */,
 				0A58554C1E712F4100E62E8E /* NSNate+Extension.swift in Sources */,
 				0A1E49581E729F6600517C30 /* NQAnchorViewController.swift in Sources */,
 				0A5855461E7106E100E62E8E /* NQHomeViewController.swift in Sources */,
+				0A73EFAE1E7687F0009CEF59 /* NQCollectionBaseCell.swift in Sources */,
+				0A73EFA61E7642B3009CEF59 /* NQAnchorGroup.swift in Sources */,
 				0A1E49651E72AB4800517C30 /* NQCollectionHeaderView.swift in Sources */,
+				0A73EFA21E76418D009CEF59 /* NQRecommendViewModel.swift in Sources */,
+				0A73EFAC1E7647FB009CEF59 /* NetworkTools.swift in Sources */,
 				0A5855481E71088A00E62E8E /* UIBarButtonItem+Extension.swift in Sources */,
 				0A1E49611E72A97600517C30 /* NQCollectionPrettyCell.swift in Sources */,
 				0A1E495D1E72A65A00517C30 /* NQCollectionNormalCell.swift in Sources */,
+				0A73EFB01E7695EC009CEF59 /* NQRecommendCycleView.swift in Sources */,
+				0A73EFB81E769BB3009CEF59 /* NQCycleModel.swift in Sources */,
 				0A5855661E714A6100E62E8E /* NQPageContentView.swift in Sources */,
 				0A58556A1E7152D300E62E8E /* NQGameViewController.swift in Sources */,
 				0AF875A61E5E7F94009F7E9B /* AppDelegate.swift in Sources */,
@@ -577,6 +701,7 @@
 		};
 		0AF875B51E5E7F94009F7E9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 382E72E3A17AF4B0CEE2874E /* Pods-DYTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -594,6 +719,7 @@
 		};
 		0AF875B61E5E7F94009F7E9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A75C3B4A5203E01F64B8BEA /* Pods-DYTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

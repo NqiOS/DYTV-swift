@@ -26,10 +26,10 @@ class NQPageContentView: UIView {
     weak var delegate : NQPageContentViewDelegate?
     
     // MARK:- 懒加载属性
-    fileprivate lazy var collectionView : UICollectionView = {
+    fileprivate lazy var collectionView : UICollectionView = {[weak self] in
         //0.创建layout
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = self.bounds.size
+        layout.itemSize = (self?.bounds.size)!
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
         layout.scrollDirection = .horizontal
