@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NQCollectionGameCell" customModule="DYTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="76" height="86"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="76" height="86"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dota2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vp5-6x-gU6">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WHm-Fm-I1o">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="Gfk-71-uLE"/>
+                            <constraint firstAttribute="height" constant="45" id="OrE-eJ-sAr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="22.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Vp5-6x-gU6" secondAttribute="bottom" constant="10" id="8WR-Gq-p59"/>
+                <constraint firstItem="Vp5-6x-gU6" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="NDk-rM-95l"/>
+                <constraint firstItem="WHm-Fm-I1o" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Nq6-tP-zEl"/>
+                <constraint firstItem="Vp5-6x-gU6" firstAttribute="top" secondItem="WHm-Fm-I1o" secondAttribute="bottom" constant="5" id="h0P-Pm-sfx"/>
+            </constraints>
+            <size key="customSize" width="76" height="86"/>
+            <connections>
+                <outlet property="iconImageView" destination="WHm-Fm-I1o" id="fjc-KB-VzR"/>
+                <outlet property="titleLabel" destination="Vp5-6x-gU6" id="Yfc-jp-ydb"/>
+            </connections>
+            <point key="canvasLocation" x="-150" y="-8"/>
+        </collectionViewCell>
+    </objects>
+</document>

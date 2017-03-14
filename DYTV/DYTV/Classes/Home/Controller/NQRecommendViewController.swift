@@ -14,10 +14,17 @@ private let kGameViewH : CGFloat = 90
 class NQRecommendViewController: NQAnchorViewController {
     // MARK:- 懒加载属性
     fileprivate lazy var recommendVM : NQRecommendViewModel =  NQRecommendViewModel()
+    
     fileprivate lazy var cycleView : NQRecommendCycleView = {
         let cycleView = NQRecommendCycleView.recommendCycleView()
         cycleView.frame = CGRect(x: 0, y: -(kCycleViewH+kGameViewH), width: kScreenW, height: kCycleViewH)
         return cycleView
+    }()
+    
+    fileprivate lazy var gameView  : NQRecommendGameView = {
+        let gameView = NQRecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        return gameView
     }()
     
 }
@@ -35,7 +42,7 @@ extension NQRecommendViewController{
         collectionView.addSubview(cycleView)
         
         //4.将gameView添加collectionView中
-        
+        collectionView.addSubview(gameView)
     }
 }
 
@@ -47,16 +54,23 @@ extension NQRecommendViewController{
         
         //1.请求推荐数据
         recommendVM.requestData {
-            //1.展示推荐数据
+            //1.展示分组推荐界面
             self.collectionView.reloadData()
+            
+            //2.展示分组游戏界面
+            var groups = self.recommendVM.anchorGroups
+            groups.removeFirst()
+            groups.removeFirst()
+            let moreGroup = NQAnchorGroup()
+            moreGroup.tag_name = "更多"
+            groups.append(moreGroup)
+            
+            self.gameView.groups = groups
         }
         
         //2.请求轮播数据
         recommendVM.requestCycleData {
             self.cycleView.cycleModels = self.recommendVM.cycleModels
-//            for cycle in self.recommendVM.cycleModels{
-//                print(cycle.pic_url)
-//            }
         }
     }
 }

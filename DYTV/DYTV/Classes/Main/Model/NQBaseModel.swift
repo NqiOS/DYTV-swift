@@ -1,16 +1,18 @@
 //
-//  BaseGameModel.swift
-//  DYZB
+//  NQBaseModel.swift
+//  DYTV
 //
-//  Created by 1 on 16/10/8.
-//  Copyright © 2016年 小码哥. All rights reserved.
+//  Created by djk on 17/3/14.
+//  Copyright © 2017年 NQ. All rights reserved.
 //
 
 import UIKit
 
-class NQBaseGameModel: NSObject {
+class NQBaseModel: NSObject {
     // MARK:- 定义属性
+    //名字
     var tag_name : String = ""
+    //图片
     var icon_url : String = ""
     
     // MARK:- 自定义构造函数
