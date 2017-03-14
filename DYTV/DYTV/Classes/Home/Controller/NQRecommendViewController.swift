@@ -54,6 +54,9 @@ extension NQRecommendViewController{
         //2.请求轮播数据
         recommendVM.requestCycleData {
             self.cycleView.cycleModels = self.recommendVM.cycleModels
+//            for cycle in self.recommendVM.cycleModels{
+//                print(cycle.pic_url)
+//            }
         }
     }
 }

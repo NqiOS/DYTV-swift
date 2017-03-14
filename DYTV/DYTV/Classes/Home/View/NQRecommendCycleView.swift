@@ -67,9 +67,7 @@ extension NQRecommendCycleView : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kCycleCellID, for: indexPath) as! NQCollectionCycleCell
-        
-        cell.cycleModel = cycleModels![(indexPath as NSIndexPath).item % cycleModels!.count]
-        
+        cell.cycleModel = cycleModels?[indexPath.item%(cycleModels?.count ?? 1)];
         return cell
     }
 }

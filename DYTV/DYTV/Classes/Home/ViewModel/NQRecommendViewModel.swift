@@ -87,7 +87,7 @@ extension NQRecommendViewModel{
             //1.获取字典数组
             guard let resultDict = result as? [String : NSObject] else{ return }
             guard let dataArray = resultDict["data"] as? [[String : NSObject]] else{ return }
-//            print(dataArray)
+
             //2.转模型
             for dict in dataArray{
                 self.cycleModels.append(NQCycleModel(dict: dict))

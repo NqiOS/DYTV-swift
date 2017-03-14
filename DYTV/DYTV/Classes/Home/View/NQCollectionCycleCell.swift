@@ -18,7 +18,6 @@ class NQCollectionCycleCell: UICollectionViewCell {
     var cycleModel : NQCycleModel? {
         didSet {
             titleLabel.text = cycleModel?.title
-            print(cycleModel?.title)
             let iconURL = URL(string: cycleModel?.pic_url ?? "")!
             iconImageView.kf.setImage(with: iconURL, placeholder: UIImage(named: "Img_default"))
         }
