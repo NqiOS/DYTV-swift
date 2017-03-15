@@ -14,11 +14,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="76" height="86"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dota2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vp5-6x-gU6">
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WHm-Fm-I1o">
                         <constraints>
                             <constraint firstAttribute="width" constant="45" id="Gfk-71-uLE"/>
@@ -31,13 +26,27 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSW-AC-fVs">
+                        <color key="backgroundColor" white="0.33000000000000002" alpha="0.30021551724137929" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="u7D-LL-3MS"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dota2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vp5-6x-gU6">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="Vp5-6x-gU6" secondAttribute="bottom" constant="10" id="8WR-Gq-p59"/>
-                <constraint firstItem="Vp5-6x-gU6" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="NDk-rM-95l"/>
+                <constraint firstItem="Vp5-6x-gU6" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="30v-bB-OlI"/>
+                <constraint firstAttribute="trailing" secondItem="PSW-AC-fVs" secondAttribute="trailing" id="ArD-7X-Hkg"/>
+                <constraint firstItem="Vp5-6x-gU6" firstAttribute="top" secondItem="WHm-Fm-I1o" secondAttribute="bottom" constant="5" id="J1p-JK-H7P"/>
+                <constraint firstAttribute="bottom" secondItem="PSW-AC-fVs" secondAttribute="bottom" id="MSm-Ei-Iml"/>
                 <constraint firstItem="WHm-Fm-I1o" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Nq6-tP-zEl"/>
-                <constraint firstItem="Vp5-6x-gU6" firstAttribute="top" secondItem="WHm-Fm-I1o" secondAttribute="bottom" constant="5" id="h0P-Pm-sfx"/>
+                <constraint firstItem="WHm-Fm-I1o" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-5" id="Uzk-js-DoZ"/>
+                <constraint firstItem="PSW-AC-fVs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bzD-mY-2fF"/>
             </constraints>
             <size key="customSize" width="76" height="86"/>
             <connections>

@@ -75,7 +75,7 @@ extension NQRecommendViewController{
     }
 }
 
-// MARK:- 遵守UICollectionView的数据源
+// MARK:- 重写父类方法
 extension  NQRecommendViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.section == 1{
