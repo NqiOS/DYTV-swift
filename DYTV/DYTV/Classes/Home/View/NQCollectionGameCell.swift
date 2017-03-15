@@ -12,6 +12,8 @@ class NQCollectionGameCell: UICollectionViewCell {
     // MARK: 控件属性
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var bottomLine: UIView!
+    
     
     // MARK: 定义模型属性
     var gameModel : NQBaseModel? {

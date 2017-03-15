@@ -8,28 +8,44 @@
 
 import UIKit
 
-class NQAmuseViewController: UIViewController {
+private let kMenuViewH : CGFloat = 200
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+class NQAmuseViewController: NQAnchorViewController {
+    // MARK: 懒加载属性
+    fileprivate lazy var amuseVM : NQAmuseViewModel = NQAmuseViewModel()
+    fileprivate lazy var menuView : NQAmuseMenuView = {
+        let menuView = NQAmuseMenuView.amuseMenuView()
+        menuView.frame = CGRect(x: 0, y: -kMenuViewH, width: kScreenW, height: kMenuViewH)
+        return menuView
+    }()
+}
 
-        // Do any additional setup after loading the view.
+// MARK:- 设置UI界面
+extension NQAmuseViewController{
+    override func setupUI() {
+        //1.先调用super.setupUI()
+        super.setupUI()
+        collectionView.contentInset = UIEdgeInsets(top: kMenuViewH, left: 0, bottom: 0, right: 0)
+        //添加菜单view到collectionView中
+        collectionView.addSubview(menuView)
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+// MARK:- 请求数据
+extension NQAmuseViewController{
+    override func loadData() {
+        // 0.给父类中的ViewModel进行赋值
+        baseVM = amuseVM
+        
+        //1.请求数据
+        amuseVM.loadAmuseData {
+            //刷新下部分组界面
+            self.collectionView.reloadData()
+            
+            //赋值上部表格数据
+            var tempGroups = self.amuseVM.anchorGroups
+            tempGroups.removeFirst()
+            self.menuView.groups = tempGroups
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

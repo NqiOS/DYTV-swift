@@ -102,7 +102,8 @@ extension NQGameViewController : UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kGameCellID, for: indexPath) as! NQCollectionGameCell
         
         cell.gameModel = gameVM.games[indexPath.item]
-
+        cell.bottomLine.isHidden = false
+        
         return cell
     }
     

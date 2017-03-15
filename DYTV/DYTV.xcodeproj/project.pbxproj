@@ -16,6 +16,11 @@
 		0A1E49661E72AB4800517C30 /* NQCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1E49641E72AB4800517C30 /* NQCollectionHeaderView.xib */; };
 		0A2635051E78E88600B430C0 /* NQGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2635041E78E88600B430C0 /* NQGameModel.swift */; };
 		0A2635071E78E8E400B430C0 /* NQGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2635061E78E8E400B430C0 /* NQGameViewModel.swift */; };
+		0A2635091E792C1B00B430C0 /* NQAmuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2635081E792C1B00B430C0 /* NQAmuseViewModel.swift */; };
+		0A26350B1E79309700B430C0 /* NQAmuseMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26350A1E79309700B430C0 /* NQAmuseMenuView.swift */; };
+		0A26350D1E7930B200B430C0 /* NQAmuseMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A26350C1E7930B200B430C0 /* NQAmuseMenuView.xib */; };
+		0A2635141E79335A00B430C0 /* NQCollectionAmuseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2635121E79335A00B430C0 /* NQCollectionAmuseCell.swift */; };
+		0A2635151E79335A00B430C0 /* NQCollectionAmuseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2635131E79335A00B430C0 /* NQCollectionAmuseCell.xib */; };
 		0A39D96C1E77880900BAD050 /* NQRecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A39D96B1E77880900BAD050 /* NQRecommendGameView.swift */; };
 		0A39D9741E77C8D500BAD050 /* NQBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A39D9731E77C8D500BAD050 /* NQBaseModel.swift */; };
 		0A39D9771E77CAF200BAD050 /* NQCollectionGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A39D9751E77CAF200BAD050 /* NQCollectionGameCell.swift */; };
@@ -64,6 +69,11 @@
 		0A1E49641E72AB4800517C30 /* NQCollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NQCollectionHeaderView.xib; sourceTree = "<group>"; };
 		0A2635041E78E88600B430C0 /* NQGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQGameModel.swift; sourceTree = "<group>"; };
 		0A2635061E78E8E400B430C0 /* NQGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQGameViewModel.swift; sourceTree = "<group>"; };
+		0A2635081E792C1B00B430C0 /* NQAmuseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQAmuseViewModel.swift; sourceTree = "<group>"; };
+		0A26350A1E79309700B430C0 /* NQAmuseMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQAmuseMenuView.swift; sourceTree = "<group>"; };
+		0A26350C1E7930B200B430C0 /* NQAmuseMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NQAmuseMenuView.xib; sourceTree = "<group>"; };
+		0A2635121E79335A00B430C0 /* NQCollectionAmuseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQCollectionAmuseCell.swift; sourceTree = "<group>"; };
+		0A2635131E79335A00B430C0 /* NQCollectionAmuseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NQCollectionAmuseCell.xib; sourceTree = "<group>"; };
 		0A39D96B1E77880900BAD050 /* NQRecommendGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQRecommendGameView.swift; sourceTree = "<group>"; };
 		0A39D9731E77C8D500BAD050 /* NQBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQBaseModel.swift; sourceTree = "<group>"; };
 		0A39D9751E77CAF200BAD050 /* NQCollectionGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQCollectionGameCell.swift; sourceTree = "<group>"; };
@@ -125,6 +135,17 @@
 				8A75C3B4A5203E01F64B8BEA /* Pods-DYTV.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		0A2635161E7946BE00B430C0 /* amuse */ = {
+			isa = PBXGroup;
+			children = (
+				0A26350A1E79309700B430C0 /* NQAmuseMenuView.swift */,
+				0A26350C1E7930B200B430C0 /* NQAmuseMenuView.xib */,
+				0A2635121E79335A00B430C0 /* NQCollectionAmuseCell.swift */,
+				0A2635131E79335A00B430C0 /* NQCollectionAmuseCell.xib */,
+			);
+			name = amuse;
 			sourceTree = "<group>";
 		};
 		0A39D96A1E7787C800BAD050 /* recommend-Cycle */ = {
@@ -217,6 +238,7 @@
 			children = (
 				0A39D96A1E7787C800BAD050 /* recommend-Cycle */,
 				0A39D97B1E77D79F00BAD050 /* recommend-Game */,
+				0A2635161E7946BE00B430C0 /* amuse */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -226,6 +248,7 @@
 			children = (
 				0A73EFA11E76418D009CEF59 /* NQRecommendViewModel.swift */,
 				0A2635061E78E8E400B430C0 /* NQGameViewModel.swift */,
+				0A2635081E792C1B00B430C0 /* NQAmuseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -502,6 +525,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2635151E79335A00B430C0 /* NQCollectionAmuseCell.xib in Resources */,
 				0A1E49661E72AB4800517C30 /* NQCollectionHeaderView.xib in Resources */,
 				0A73EFB61E769A7B009CEF59 /* NQCollectionCycleCell.xib in Resources */,
 				0AF875B01E5E7F94009F7E9B /* LaunchScreen.storyboard in Resources */,
@@ -511,6 +535,7 @@
 				0AF875C01E5E8E86009F7E9B /* Home.storyboard in Resources */,
 				0AF875C71E5E8EFB009F7E9B /* Profile.storyboard in Resources */,
 				0A39D97A1E77CB1700BAD050 /* NQRecommendGameView.xib in Resources */,
+				0A26350D1E7930B200B430C0 /* NQAmuseMenuView.xib in Resources */,
 				0A1E49621E72A97600517C30 /* NQCollectionPrettyCell.xib in Resources */,
 				0A39D9781E77CAF200BAD050 /* NQCollectionGameCell.xib in Resources */,
 				0AF875C51E5E8ECF009F7E9B /* Follow.storyboard in Resources */,
@@ -579,6 +604,7 @@
 				0A73EFA71E7642B3009CEF59 /* NQAnchorModel.swift in Sources */,
 				0A5855641E71385700E62E8E /* NQPageTitleView.swift in Sources */,
 				0A73EFB51E769A7B009CEF59 /* NQCollectionCycleCell.swift in Sources */,
+				0A2635141E79335A00B430C0 /* NQCollectionAmuseCell.swift in Sources */,
 				0A73EFAA1E76444F009CEF59 /* NQBaseViewModel.swift in Sources */,
 				0A58554C1E712F4100E62E8E /* NSNate+Extension.swift in Sources */,
 				0A2635051E78E88600B430C0 /* NQGameModel.swift in Sources */,
@@ -596,9 +622,11 @@
 				0A39D96C1E77880900BAD050 /* NQRecommendGameView.swift in Sources */,
 				0A39D9741E77C8D500BAD050 /* NQBaseModel.swift in Sources */,
 				0A73EFB81E769BB3009CEF59 /* NQCycleModel.swift in Sources */,
+				0A2635091E792C1B00B430C0 /* NQAmuseViewModel.swift in Sources */,
 				0A39D9771E77CAF200BAD050 /* NQCollectionGameCell.swift in Sources */,
 				0A2635071E78E8E400B430C0 /* NQGameViewModel.swift in Sources */,
 				0A5855661E714A6100E62E8E /* NQPageContentView.swift in Sources */,
+				0A26350B1E79309700B430C0 /* NQAmuseMenuView.swift in Sources */,
 				0A58556A1E7152D300E62E8E /* NQGameViewController.swift in Sources */,
 				0AF875A61E5E7F94009F7E9B /* AppDelegate.swift in Sources */,
 				0A5855681E7152C000E62E8E /* NQRecommendViewController.swift in Sources */,

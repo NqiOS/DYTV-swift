@@ -26,7 +26,7 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSW-AC-fVs">
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSW-AC-fVs">
                         <color key="backgroundColor" white="0.33000000000000002" alpha="0.30021551724137929" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="u7D-LL-3MS"/>
@@ -50,6 +50,7 @@
             </constraints>
             <size key="customSize" width="76" height="86"/>
             <connections>
+                <outlet property="bottomLine" destination="PSW-AC-fVs" id="LAK-im-YPm"/>
                 <outlet property="iconImageView" destination="WHm-Fm-I1o" id="fjc-KB-VzR"/>
                 <outlet property="titleLabel" destination="Vp5-6x-gU6" id="Yfc-jp-ydb"/>
             </connections>
