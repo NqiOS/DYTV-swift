@@ -18,7 +18,7 @@ private let kGameViewH : CGFloat = 90
 private let kGameCellID = "kGameCellID"
 private let kHeaderViewID = "kHeaderViewID"
 
-class NQGameViewController: UIViewController {
+class NQGameViewController: NQBaseViewController {
     // MARK:- 懒加载属性
     fileprivate lazy var  gameVM : NQGameViewModel = NQGameViewModel()
     
@@ -67,15 +67,24 @@ class NQGameViewController: UIViewController {
 
 // MARK:- 设置UI界面
 extension NQGameViewController{
-    fileprivate func setupUI(){
+     override func setupUI(){
+        //0.对ContentView进行赋值
+        contentView = collectionView
+        
         //1.添加UICollectionView
         view.addSubview(collectionView)
+        
         //2.设置collectionView的内边距
         collectionView.contentInset = UIEdgeInsets(top: kHeaderViewH+kGameViewH, left: 0, bottom: 0, right: 0)
+        
         //3.添加顶部的HeaderView
         collectionView.addSubview(topHeaderView)
+        
         //4.将常用游戏的View,添加到collectionView中
         collectionView.addSubview(gameView)
+        
+        //5.调用父类方法
+        super.setupUI()
     }
 }
 
@@ -85,8 +94,12 @@ extension NQGameViewController{
         gameVM.loadAllGameData { 
             //1.展示全部游戏
             self.collectionView.reloadData()
+            
             //2.展示常用游戏
             self.gameView.groups = Array(self.gameVM.games[0..<10])
+            
+            //3.数据请求完成
+            self.loadDataFinished()
         }
     }
 }

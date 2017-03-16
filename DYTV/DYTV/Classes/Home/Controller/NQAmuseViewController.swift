@@ -39,13 +39,16 @@ extension NQAmuseViewController{
         
         //1.请求数据
         amuseVM.loadAmuseData {
-            //刷新下部分组界面
+            //1.刷新下部分组界面
             self.collectionView.reloadData()
             
-            //赋值上部表格数据
+            //2.赋值上部表格数据
             var tempGroups = self.amuseVM.anchorGroups
             tempGroups.removeFirst()
             self.menuView.groups = tempGroups
+            
+            //3.数据请求完成
+            self.loadDataFinished()
         }
     }
 }

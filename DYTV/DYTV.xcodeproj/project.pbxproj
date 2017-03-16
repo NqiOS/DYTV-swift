@@ -49,6 +49,7 @@
 		0A73EFB61E769A7B009CEF59 /* NQCollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A73EFB41E769A7B009CEF59 /* NQCollectionCycleCell.xib */; };
 		0A73EFB81E769BB3009CEF59 /* NQCycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73EFB71E769BB3009CEF59 /* NQCycleModel.swift */; };
 		0AEDDC7C1E7A6DAB00C66422 /* NQFunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDDC7B1E7A6DAB00C66422 /* NQFunnyViewModel.swift */; };
+		0AEDDC7E1E7A736F00C66422 /* NQBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDDC7D1E7A736F00C66422 /* NQBaseViewController.swift */; };
 		0AF875A61E5E7F94009F7E9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF875A51E5E7F94009F7E9B /* AppDelegate.swift */; };
 		0AF875AB1E5E7F94009F7E9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875A91E5E7F94009F7E9B /* Main.storyboard */; };
 		0AF875AD1E5E7F94009F7E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875AC1E5E7F94009F7E9B /* Assets.xcassets */; };
@@ -103,6 +104,7 @@
 		0A73EFB41E769A7B009CEF59 /* NQCollectionCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NQCollectionCycleCell.xib; sourceTree = "<group>"; };
 		0A73EFB71E769BB3009CEF59 /* NQCycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQCycleModel.swift; sourceTree = "<group>"; };
 		0AEDDC7B1E7A6DAB00C66422 /* NQFunnyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQFunnyViewModel.swift; sourceTree = "<group>"; };
+		0AEDDC7D1E7A736F00C66422 /* NQBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQBaseViewController.swift; sourceTree = "<group>"; };
 		0AF875A21E5E7F94009F7E9B /* DYTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF875A51E5E7F94009F7E9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AF875AA1E5E7F94009F7E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 		0A58554F1E71379000E62E8E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0AEDDC7D1E7A736F00C66422 /* NQBaseViewController.swift */,
 				0A1E49571E729F6600517C30 /* NQAnchorViewController.swift */,
 			);
 			path = Controller;
@@ -634,6 +637,7 @@
 				0A58556A1E7152D300E62E8E /* NQGameViewController.swift in Sources */,
 				0AF875A61E5E7F94009F7E9B /* AppDelegate.swift in Sources */,
 				0A5855681E7152C000E62E8E /* NQRecommendViewController.swift in Sources */,
+				0AEDDC7E1E7A736F00C66422 /* NQBaseViewController.swift in Sources */,
 				0A58554E1E71308D00E62E8E /* Common.swift in Sources */,
 				0A58554A1E712DA400E62E8E /* UIColor+Extension.swift in Sources */,
 			);

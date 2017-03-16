@@ -21,7 +21,7 @@ let kNormalItemH = kNormalItemW * 3 / 4
 let kPrettyItemH = kNormalItemW * 4 / 3
 
 // MARK:- 定义NQAnchorViewController类
-class NQAnchorViewController: UIViewController {
+class NQAnchorViewController: NQBaseViewController {
     // MARK:- 定义属性
     var baseVM : NQBaseViewModel!
     
@@ -60,9 +60,15 @@ class NQAnchorViewController: UIViewController {
 
 // MARK:- 设置UI界面
 extension NQAnchorViewController{
-     func setupUI(){
-        //添加collectionView
+     override func setupUI(){
+        //1.给父类中内容View的引用进行赋值
+        contentView = collectionView
+        
+        //2.添加collectionView
         view.addSubview(collectionView)
+        
+        //3.调用super.setupUI()
+        super.setupUI()
     }
 }
 

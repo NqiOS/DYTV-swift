@@ -31,7 +31,11 @@ extension  NQFunnyViewController{
         
         //2.请求数据
         funnyVM.loadFunnyData{
+            //1.刷新界面
             self.collectionView.reloadData()
+            
+            //2.数据请求完成
+            self.loadDataFinished()
         }
     }
 }
