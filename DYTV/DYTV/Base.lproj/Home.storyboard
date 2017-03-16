@@ -27,7 +27,7 @@
         <!--首页-->
         <scene sceneID="HGd-nr-I5f">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UPu-FU-Nuv" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UPu-FU-Nuv" customClass="CustomNavigationController" customModule="DYTV" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" image="btn_home_normal" selectedImage="btn_home_selected" id="tLY-GX-EAU"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
