@@ -76,15 +76,25 @@ extension NQAnchorViewController{
 // MARK:- 遵守UICollectionView的数据源
 extension  NQAnchorViewController : UICollectionViewDataSource{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
+        if baseVM == nil {
+            return 3
+        }
         return baseVM.anchorGroups.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if baseVM == nil {
+            return 5
+        }
         return baseVM.anchorGroups[section].anchors.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! NQCollectionNormalCell
+        
+        if baseVM == nil {
+            return cell
+        }
         
         cell.anchor = baseVM.anchorGroups[indexPath.section].anchors[indexPath.item]
         
@@ -93,6 +103,10 @@ extension  NQAnchorViewController : UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)as! NQCollectionHeaderView
+        
+        if baseVM == nil {
+            return headerView
+        }
         
         headerView.group = baseVM.anchorGroups[indexPath.section]
         

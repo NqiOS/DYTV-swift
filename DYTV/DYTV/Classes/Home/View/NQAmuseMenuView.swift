@@ -16,7 +16,6 @@ class NQAmuseMenuView: UIView {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
 
-
     // MARK: 定义属性
     var groups : [NQAnchorGroup]?{
         didSet{

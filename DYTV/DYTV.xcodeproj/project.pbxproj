@@ -48,6 +48,7 @@
 		0A73EFB51E769A7B009CEF59 /* NQCollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73EFB31E769A7B009CEF59 /* NQCollectionCycleCell.swift */; };
 		0A73EFB61E769A7B009CEF59 /* NQCollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A73EFB41E769A7B009CEF59 /* NQCollectionCycleCell.xib */; };
 		0A73EFB81E769BB3009CEF59 /* NQCycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73EFB71E769BB3009CEF59 /* NQCycleModel.swift */; };
+		0AEDDC7C1E7A6DAB00C66422 /* NQFunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDDC7B1E7A6DAB00C66422 /* NQFunnyViewModel.swift */; };
 		0AF875A61E5E7F94009F7E9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF875A51E5E7F94009F7E9B /* AppDelegate.swift */; };
 		0AF875AB1E5E7F94009F7E9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875A91E5E7F94009F7E9B /* Main.storyboard */; };
 		0AF875AD1E5E7F94009F7E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF875AC1E5E7F94009F7E9B /* Assets.xcassets */; };
@@ -101,6 +102,7 @@
 		0A73EFB31E769A7B009CEF59 /* NQCollectionCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQCollectionCycleCell.swift; sourceTree = "<group>"; };
 		0A73EFB41E769A7B009CEF59 /* NQCollectionCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NQCollectionCycleCell.xib; sourceTree = "<group>"; };
 		0A73EFB71E769BB3009CEF59 /* NQCycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQCycleModel.swift; sourceTree = "<group>"; };
+		0AEDDC7B1E7A6DAB00C66422 /* NQFunnyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQFunnyViewModel.swift; sourceTree = "<group>"; };
 		0AF875A21E5E7F94009F7E9B /* DYTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF875A51E5E7F94009F7E9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AF875AA1E5E7F94009F7E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				0A73EFA11E76418D009CEF59 /* NQRecommendViewModel.swift */,
 				0A2635061E78E8E400B430C0 /* NQGameViewModel.swift */,
 				0A2635081E792C1B00B430C0 /* NQAmuseViewModel.swift */,
+				0AEDDC7B1E7A6DAB00C66422 /* NQFunnyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -613,6 +616,7 @@
 				0A73EFAE1E7687F0009CEF59 /* NQCollectionBaseCell.swift in Sources */,
 				0A73EFA61E7642B3009CEF59 /* NQAnchorGroup.swift in Sources */,
 				0A1E49651E72AB4800517C30 /* NQCollectionHeaderView.swift in Sources */,
+				0AEDDC7C1E7A6DAB00C66422 /* NQFunnyViewModel.swift in Sources */,
 				0A73EFA21E76418D009CEF59 /* NQRecommendViewModel.swift in Sources */,
 				0A73EFAC1E7647FB009CEF59 /* NetworkTools.swift in Sources */,
 				0A5855481E71088A00E62E8E /* UIBarButtonItem+Extension.swift in Sources */,

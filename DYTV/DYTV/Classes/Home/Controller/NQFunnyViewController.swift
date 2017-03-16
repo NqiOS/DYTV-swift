@@ -8,28 +8,30 @@
 
 import UIKit
 
-class NQFunnyViewController: UIViewController {
+private let kTopMargin : CGFloat = 8
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+class NQFunnyViewController: NQAnchorViewController {
+    // MARK:- 懒加载属性
+    fileprivate lazy var funnyVM : NQFunnyViewModel = NQFunnyViewModel()
+}
 
-        // Do any additional setup after loading the view.
+extension  NQFunnyViewController{
+    override func setupUI() {
+        super.setupUI()
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.headerReferenceSize = CGSize.zero
+        collectionView.contentInset = UIEdgeInsets(top: kTopMargin, left: 0, bottom: 0, right: 0)
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+extension  NQFunnyViewController{
+    override func loadData() {
+        //1.给父类中的ViewModel进行赋值
+        baseVM = funnyVM
+        
+        //2.请求数据
+        funnyVM.loadFunnyData{
+            self.collectionView.reloadData()
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
